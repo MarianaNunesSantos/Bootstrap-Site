@@ -1,0 +1,56 @@
+.cards{
+    display: flex;
+    justify-content: center;
+    }
+    
+    #carrosel-div{
+        width: 100%;
+    }
+    
+    #nome-domestika{
+        color: rgb(223, 49, 49);
+    }
+    
+    .img-car{
+        width: 19%;
+    }
+    
+    #cursos-h3{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .galeria{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .galeria div{
+        margin-left: 20px;
+    }
+
+    svg{
+        color: white;
+        margin-left: 15px;
+        cursor: pointer;
+    }
+
+    i{
+        cursor: pointer;
+    }
+
+    #carouselExampleControls{
+        padding-bottom: 20px;
+        padding-left: 5%;
+    }
+
+    #btn-cor{
+        color: brown;
+        background-color: white;
+        border-color: rgb(228, 8, 8);
+    }

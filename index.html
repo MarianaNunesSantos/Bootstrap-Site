@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site bootstrap</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" id="nome-domestika" href="#"><strong>Domestika</strong></a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Cursos
+                            </button>
+                            <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item text-white" href="#">Todos os cursos</a>
+                                <a class="dropdown-item text-white" href="#">Ilustrator</a>
+                                <a class="dropdown-item text-white" href="#">Desing</a>
+                                <a class="dropdown-item text-white" href="#">3D</a>
+                                <a class="dropdown-item text-white" href="#">Photoshop</a>
+                                <a class="dropdown-item text-white" href="#">Fashion</a>
+                                <a class="dropdown-item text-white" href="#">Culinária</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Comunidade</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Plus +</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                    <button id="btn-cor" class="btn btn-outline-success" type="submit"><strong>Pesquisar</strong></button>
+                </form>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                </svg>
+            </div>
+        </nav>
+    </header>
+
+
+    <div id="carouselExampleControls" class="carousel slide bg-dark" data-ride="carousel">
+        <div class="col-md-12">
+            <div id="carrosel-div" class="carousel-inner">
+                <div id="div-img-car" class="carousel-item active">
+                    <img class="img-car" src="img/novos1.jpg" alt="Primeiro Slide">
+                    <img class="img-car" src="img/novos2.jpg" alt="Primeiro Slide">
+                    <img class="img-car" src="img/novos3.jpg" alt="Primeiro Slide">
+                    <img class="img-car" src="img/novos10.jpg" alt="Primeiro Slide">
+                    <img class="img-car" src="img/novos11.jpg" alt="Primeiro Slide">
+                </div>
+                <div id="div-img-car" class="carousel-item">
+                    <img class="img-car" src="img/novos4.jpg" alt="Segundo Slide">
+                    <img class="img-car" src="img/novos5.jpg" alt="Primeiro Slide">
+                    <img class="img-car" src="img/novos6.jpg" alt="Primeiro Slide">
+                    <img class="img-car" src="img/novos12.jpg" alt="Primeiro Slide">
+                    <img class="img-car" src="img/novos13.jpg" alt="Primeiro Slide">
+                </div>
+                <div id="div-img-car" class="carousel-item">
+                    <img class="img-car" src="img/novos7.jpg" alt="Terceiro Slide">
+                    <img class="img-car" src="img/novos8.jpg" alt="Primeiro Slide">
+                    <img class="img-car" src="img/novos9.jpg" alt="Primeiro Slide">
+                    <img class="img-car" src="img/novos14.jpg" alt="Primeiro Slide">
+                    <img class="img-car" src="img/novos15.jpg" alt="Primeiro Slide">
+                </div>
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3 id="cursos-h3">Cursos que você pode gostar!</h3>
+    <div class="cards">
+        <div class="card col-md-2" style="width: 20rem;">
+            <img class="card-img-top" src="img/0.jpg" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Introdção para Pintura em Mural Decorativo</h5>
+                <p class="card-text">Curso de introdução para pintura em murais, com referências e com auxilio do
+                    Photoshop.</p>
+                <a href="#" class="btn btn-primary">Saiba mais --></a>
+            </div>
+        </div>
+        <div class="card col-md-2" style="width: 20rem;">
+            <img class="card-img-top" src="img/2.jpg" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Pintura de vegetação em aquarela digital</h5>
+                <p class="card-text">Curso de pintura sobre vegetação para ambientação de histórias.</p>
+                <a href="#" class="btn btn-primary">Saiba mais --></a>
+            </div>
+        </div>
+        <div class="card col-md-2" style="width: 20rem;">
+            <img class="card-img-top" src="img/6.jpg" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">ilustração de personagens e cenários.</h5>
+                <p class="card-text">Curso de criação de personagem e de cenários do zero.</p>
+                <a href="#" class="btn btn-primary">Saiba mais --></a>
+            </div>
+        </div>
+        <div class="card col-md-2" style="width: 20rem;">
+            <img class="card-img-top" src="img/7.jpg" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Curso Básico de Ilustrator</h5>
+                <p class="card-text">Curso de aprendizados básico das ferramentas do Ilustrator.</p>
+                <a href="#" class="btn btn-primary">Saiba mais --></a>
+            </div>
+        </div>
+        <div class="card col-md-2" style="width: 20rem;">
+            <img class="card-img-top" src="img/8.jpg" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Pixel Art para video game!</h5>
+                <p class="card-text">Curso de criação de personagem do zero para games em PixelArt.</p>
+                <a href="#" class="btn btn-primary">Saiba mais --></a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <h3 id="cursos-h3">Seus Cursos!</h3>
+    <div class="cards">
+        <div class="card" style="width: 20rem;">
+            <img class="card-img-top" src="img/5.jpg" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Adobe Photoshop para Concept Art</h5>
+                <p class="card-text">Curso de Photoshop para criação de Concept Art.</p>
+                <a href="#" class="btn btn-primary">Aulas --></a>
+            </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+            <img class="card-img-top" src="img/4.jpg" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Retratos ilustrados com elementos botânicos</h5>
+                <p class="card-text">Curso de pintura digital com elementos botânicos.</p>
+                <a href="#" class="btn btn-primary">Aulas --></a>
+            </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+            <img class="card-img-top" src="img/3.jpg" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Desing de Personagem para Animação com Photoshop</h5>
+                <p class="card-text">Curso de criação de personagem do zero para animação.</p>
+                <a href="#" class="btn btn-primary">Aulas --></a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <h3 id="cursos-h3">Galeria de arte dos Alunos!</h3>
+    <br>
+    <div class="galeria">
+        <div class="imgs-galeria">
+            <a href="#"><img src="img/galeria-1.jpg" alt=""></a>
+            <div>
+                <i class="bi bi-heart">34</i>
+                <i class="bi bi-chat">3</i>
+                <i class="bi bi-eye">145</i>
+            </div>
+        </div>
+        <div class="imgs-galeria">
+            <a href="#"><img src="img/galeria-2.jpg" alt=""></a>
+            <div>
+                <i class="bi bi-heart">76</i>
+                <i class="bi bi-chat">13</i>
+                <i class="bi bi-eye">317</i>
+            </div>
+        </div>
+        <div class="imgs-galeria">
+            <a href="#"><img src="img/galeria-3.jpg" alt=""></a>
+            <div>
+                <i class="bi bi-heart">16</i>
+                <i class="bi bi-chat">7</i>
+                <i class="bi bi-eye"></i>
+            </div>
+        </div>
+        <div class="imgs-galeria">
+            <a href="#"><img src="img/galeria-4.jpg" alt=""></a>
+            <div>
+                <i class="bi bi-heart">24</i>
+                <i class="bi bi-chat">0</i>
+                <i class="bi bi-eye">682</i>
+            </div>
+        </div>
+        <div class="imgs-galeria">
+            <a href="#"><img src="img/galeria-5.jpg" alt=""></a>
+            <div>
+                <i class="bi bi-heart">39</i>
+                <i class="bi bi-chat">9</i>
+                <i class="bi bi-eye">791</i>
+            </div>
+        </div>
+        <div class="imgs-galeria">
+            <a href="#"><img src="img/galeria-6.jpg" alt=""></a>
+            <div>
+                <i class="bi bi-heart">58</i>
+                <i class="bi bi-chat">11</i>
+                <i class="bi bi-eye">847</i>
+            </div>
+        </div>
+        <div class="imgs-galeria">
+            <a href="#"><img src="img/galeria-7.jpg" alt=""></a>
+            <div>
+                <i class="bi bi-heart">60</i>
+                <i class="bi bi-chat">7</i>
+                <i class="bi bi-eye">587</i>
+            </div>
+        </div>
+        <div class="imgs-galeria">
+            <a href="#"><img src="img/galeria-8.jpg" alt=""></a>
+            <div>
+                <i class="bi bi-heart">43</i>
+                <i class="bi bi-chat">2</i>
+                <i class="bi bi-eye">343</i>
+            </div>
+        </div>
+        <div class="imgs-galeria">
+            <a href="#"><img src="img/galeria-9.jpg" alt=""></a>
+            <div>
+                <i class="bi bi-heart">51</i>
+                <i class="bi bi-chat">1</i>
+                <i class="bi bi-eye">525</i>
+            </div>
+        </div>
+        <div class="imgs-galeria">
+            <a href="#"><img src="img/galeria-10.jpg" alt=""></a>
+            <div>
+                <i class="bi bi-heart">73</i>
+                <i class="bi bi-chat">9</i>
+                <i class="bi bi-eye">389</i>
+            </div>
+        </div>
+    </div>
+<br>
+<br>
+<br>
+    <footer>
+        <hr>
+        <div class="container">
+            <footer class="py-5">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Categorias</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cursos de ilustração</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cursos de artesanato</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cursos de 3D e Animação</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cursos de Fotografia e Vídeo</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cursos de design</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Áreas</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cursos de ilustração tradicional</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cursos de Ilustração Digital</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cursos de desenho</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cursos de Artes e Ofícios</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cursos de Design Gráfico</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Programas</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cursos de Adobe Photoshop</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cursos de Adobe Illustrator</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cursos Procreate</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cursos de Cinema 4D</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cursos de Blender</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                            <h5>Se inscreva em nosso programa!</h5>
+                            <p>Todo mês novos cursos são lançados gratuitamente se estiver inscrito.</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email: </label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                                <button class="btn btn-primary" type="button">Inscreva-se</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
